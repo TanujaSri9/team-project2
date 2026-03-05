@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire Burger Diner</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_gilded_bun.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Empire Burger</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Burger Menu</a></li>
+            <li><a href="#analytics">Diner Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>The Taste of New York's Classic Burgers</h1>
+                <p>Juicy burgers grilled fresh and served with classic diner style.</p>
+                <a href="#menu" class="btn-primary">Explore Burger Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Diner Burger Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/classic_cheeseburger.jpg"
+                    alt="Classic Cheeseburger">
+                <h3>Classic Cheeseburger</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-cheeseburger" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Classic Cheeseburger', 'qty-cheeseburger')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/double_bacon_burger.jpg" alt="Double Bacon Burger">
+                <h3>Double Bacon Burger</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-bacon" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Double Bacon Burger', 'qty-bacon')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/loaded_fries.jpg" alt="Loaded Fries">
+                <h3>Loaded Fries</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-fries" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Loaded Fries', 'qty-fries')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/vanilla_milkshake.jpg" alt="Vanilla Milkshake">
+                <h3>Vanilla Milkshake</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-shake" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Vanilla Milkshake', 'qty-shake')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Popular Diner Specials Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Empire Burger Diner</h2>
+                <p>Empire Burger Diner brings the authentic taste of New York’s classic burger culture. Our burgers are
+                    grilled fresh and served with traditional diner flavors and recipes.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/diner_burger_chef.jpg" alt="Diner Burger Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Empire Burger Diner. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_gilded_bun.js"></script>
+</body>
+
+</html>

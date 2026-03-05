@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Fuego Taco Cantina</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_ember_grill.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">El Fuego Cantina</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Taco Menu</a></li>
+            <li><a href="#analytics">Street Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Feel the Fire of Mexican Street Flavor</h1>
+                <p>Authentic tacos and Mexican street food bursting with bold flavors.</p>
+                <a href="#menu" class="btn-primary">Explore Taco Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Taco Cantina Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/beef_taco.jpg" alt="Classic Beef Taco">
+                <h3>Classic Beef Taco</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-beeftaco" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Classic Beef Taco', 'qty-beeftaco')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/chicken_quesadilla.jpg" alt="Chicken Quesadilla">
+                <h3>Chicken Quesadilla</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-quesadilla" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Chicken Quesadilla', 'qty-quesadilla')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/loaded_nachos.jpg" alt="Loaded Nachos">
+                <h3>Loaded Nachos</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-nachos" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Loaded Nachos', 'qty-nachos')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/churros_caramel.jpg" alt="Churros with Caramel">
+                <h3>Churros with Caramel</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-churros" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Churros with Caramel', 'qty-churros')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Popular Street Specials Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About El Fuego Taco Cantina</h2>
+                <p>El Fuego Taco Cantina celebrates the bold and vibrant flavors of Mexican street food culture. Our
+                    chefs prepare authentic tacos and dishes using traditional spices and fresh ingredients.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/mexican_taco_chef.jpg" alt="Mexican Taco Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 El Fuego Taco Cantina. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_ember_grill.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+order_id,item_name,item_quantity,date,time
+1001,Tteokbokki,3,2026-02-23,06:45
+1002,Korean Corn Dog,3,2026-02-23,10:45
+1003,Bingsu Dessert,4,2026-02-23,11:45
+1004,Kimchi Pancake,4,2026-02-23,16:45
+1005,Bingsu Dessert,1,2026-02-23,18:45
+1006,Bingsu Dessert,4,2026-02-23,22:45
+1007,Korean Corn Dog,1,2026-02-24,01:45
+1008,Tteokbokki,4,2026-02-24,02:45
+1009,Bingsu Dessert,3,2026-02-24,05:45
+1010,Kimchi Pancake,2,2026-02-24,08:45
+1011,Kimchi Pancake,4,2026-02-24,12:45
+1012,Tteokbokki,1,2026-02-24,16:45
+1013,Bingsu Dessert,2,2026-02-24,17:45
+1014,Kimchi Pancake,1,2026-02-24,21:45
+1015,Tteokbokki,2,2026-02-24,23:45
+1016,Tteokbokki,1,2026-02-25,04:45
+1017,Tteokbokki,2,2026-02-25,05:45
+1018,Tteokbokki,4,2026-02-25,08:45
+1019,Kimchi Pancake,3,2026-02-25,13:45
+1020,Tteokbokki,2,2026-02-25,15:45
+1021,Korean Corn Dog,1,2026-02-25,17:45
+1022,Bingsu Dessert,2,2026-02-25,21:45
+1023,Tteokbokki,3,2026-02-26,00:45
+1024,Kimchi Pancake,2,2026-02-26,03:45
+1025,Korean Corn Dog,3,2026-02-26,05:45
+1026,Korean Corn Dog,1,2026-02-26,09:45
+1027,Kimchi Pancake,1,2026-02-26,12:45
+1028,Kimchi Pancake,4,2026-02-26,16:45
+1029,Kimchi Pancake,2,2026-02-26,17:45
+1030,Tteokbokki,4,2026-02-26,21:45
+1031,Kimchi Pancake,3,2026-02-27,01:45
+1032,Tteokbokki,2,2026-02-27,03:45
+1033,Bingsu Dessert,2,2026-02-27,06:45
+1034,Kimchi Pancake,3,2026-02-27,10:45
+1035,Kimchi Pancake,2,2026-02-27,11:45
+1036,Kimchi Pancake,4,2026-02-27,16:45
+1037,Korean Corn Dog,3,2026-02-27,18:45
+1038,Tteokbokki,3,2026-02-27,20:45
+1039,Kimchi Pancake,4,2026-02-27,23:45
+1040,Tteokbokki,2,2026-02-28,04:45
+1041,Bingsu Dessert,1,2026-02-28,06:45
+1042,Tteokbokki,3,2026-02-28,09:45
+1043,Tteokbokki,4,2026-02-28,12:45
+1044,Kimchi Pancake,4,2026-02-28,16:45
+1045,Kimchi Pancake,2,2026-02-28,18:45
+1046,Bingsu Dessert,4,2026-02-28,21:45
+1047,Tteokbokki,2,2026-03-01,00:45
+1048,Bingsu Dessert,4,2026-03-01,03:45
+1049,Bingsu Dessert,4,2026-03-01,07:45
+1050,Korean Corn Dog,1,2026-03-01,10:45
+1051,Kimchi Pancake,1,2026-03-05,05:51

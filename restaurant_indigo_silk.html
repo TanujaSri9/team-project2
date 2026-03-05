@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangkok Street Kitchen</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_indigo_silk.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Bangkok Street Kitchen</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Street Menu</a></li>
+            <li><a href="#analytics">Chef Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Authentic Thai Street Food Experience</h1>
+                <p>Spicy, sweet, and savory flavors inspired by Bangkok’s night markets.</p>
+                <a href="#menu" class="btn-primary">Explore Street Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Thai Street Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/pad_thai.jpg" alt="Pad Thai Noodles">
+                <h3>Pad Thai Noodles</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-padthai" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Pad Thai Noodles', 'qty-padthai')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/thai_basil_chicken.jpg" alt="Thai Basil Chicken">
+                <h3>Thai Basil Chicken</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-basil" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Thai Basil Chicken', 'qty-basil')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/tom_yum_soup.jpg" alt="Tom Yum Soup">
+                <h3>Tom Yum Soup</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-tomyum" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Tom Yum Soup', 'qty-tomyum')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/mango_sticky_rice.jpg" alt="Mango Sticky Rice">
+                <h3>Mango Sticky Rice</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-mango" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Mango Sticky Rice', 'qty-mango')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Popular Chef Specials Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Bangkok Street Kitchen</h2>
+                <p>Bangkok Street Kitchen brings the exciting flavors of Thailand’s night markets to your plate. Our
+                    dishes are crafted using authentic Thai spices and traditional street cooking techniques.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/thai_street_chef.jpg" alt="Thai Street Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bangkok Street Kitchen. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_indigo_silk.js"></script>
+</body>
+
+</html>

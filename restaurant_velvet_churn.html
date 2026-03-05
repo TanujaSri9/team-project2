@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelato Roma Dessert Bar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_velvet_churn.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Gelato Roma</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Dessert Menu</a></li>
+            <li><a href="#analytics">Special Treats</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Sweet Moments with Italian Gelato</h1>
+                <p>Handcrafted gelato and desserts inspired by Italian traditions.</p>
+                <a href="#menu" class="btn-primary">Explore Dessert Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Italian Dessert Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/vanilla_gelato.jpg" alt="Classic Vanilla Gelato">
+                <h3>Classic Vanilla Gelato</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-vanilla" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Classic Vanilla Gelato', 'qty-vanilla')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/chocolate_gelato.jpg"
+                    alt="Chocolate Hazelnut Gelato">
+                <h3>Chocolate Hazelnut Gelato</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-chocolate" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Chocolate Hazelnut Gelato', 'qty-chocolate')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/strawberry_cheesecake.jpg"
+                    alt="Strawberry Cheesecake Slice">
+                <h3>Strawberry Cheesecake Slice</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-cake" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Strawberry Cheesecake Slice', 'qty-cake')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/tiramisu.jpg" alt="Italian Tiramisu">
+                <h3>Italian Tiramisu</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-tiramisu" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Italian Tiramisu', 'qty-tiramisu')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Popular Dessert Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling every 5 seconds.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Gelato Roma Dessert Bar</h2>
+                <p>Gelato Roma Dessert Bar celebrates the art of Italian desserts. Our handcrafted gelato and pastries
+                    are prepared using traditional recipes and the finest ingredients.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/gelato_chef.jpg" alt="Gelato Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Gelato Roma Dessert Bar. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_velvet_churn.js"></script>
+</body>
+
+</html>

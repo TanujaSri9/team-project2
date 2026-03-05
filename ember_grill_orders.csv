@@ -1,0 +1,51 @@
+order_id,item_name,item_quantity,date,time
+1001,Classic Beef Taco,2,2026-02-23,06:20
+1002,Chicken Quesadilla,1,2026-02-23,11:20
+1003,Churros with Caramel,2,2026-02-23,12:20
+1004,Churros with Caramel,2,2026-02-23,17:20
+1005,Classic Beef Taco,1,2026-02-23,19:20
+1006,Chicken Quesadilla,3,2026-02-23,21:20
+1007,Classic Beef Taco,3,2026-02-24,02:20
+1008,Churros with Caramel,1,2026-02-24,04:20
+1009,Chicken Quesadilla,1,2026-02-24,07:20
+1010,Chicken Quesadilla,1,2026-02-24,09:20
+1011,Churros with Caramel,1,2026-02-24,14:20
+1012,Churros with Caramel,4,2026-02-24,17:20
+1013,Classic Beef Taco,2,2026-02-24,19:20
+1014,Chicken Quesadilla,4,2026-02-24,22:20
+1015,Loaded Nachos,2,2026-02-25,01:20
+1016,Chicken Quesadilla,3,2026-02-25,05:20
+1017,Loaded Nachos,4,2026-02-25,08:20
+1018,Loaded Nachos,4,2026-02-25,10:20
+1019,Loaded Nachos,3,2026-02-25,14:20
+1020,Loaded Nachos,1,2026-02-25,17:20
+1021,Churros with Caramel,4,2026-02-25,19:20
+1022,Churros with Caramel,1,2026-02-25,23:20
+1023,Classic Beef Taco,1,2026-02-26,02:20
+1024,Churros with Caramel,3,2026-02-26,05:20
+1025,Churros with Caramel,2,2026-02-26,08:20
+1026,Chicken Quesadilla,3,2026-02-26,11:20
+1027,Churros with Caramel,1,2026-02-26,13:20
+1028,Classic Beef Taco,3,2026-02-26,16:20
+1029,Chicken Quesadilla,3,2026-02-26,20:20
+1030,Loaded Nachos,1,2026-02-26,22:20
+1031,Loaded Nachos,1,2026-02-27,02:20
+1032,Chicken Quesadilla,3,2026-02-27,05:20
+1033,Chicken Quesadilla,4,2026-02-27,07:20
+1034,Churros with Caramel,2,2026-02-27,11:20
+1035,Classic Beef Taco,3,2026-02-27,14:20
+1036,Classic Beef Taco,2,2026-02-27,16:20
+1037,Loaded Nachos,3,2026-02-27,18:20
+1038,Loaded Nachos,4,2026-02-27,22:20
+1039,Loaded Nachos,1,2026-02-28,02:20
+1040,Loaded Nachos,1,2026-02-28,03:20
+1041,Loaded Nachos,4,2026-02-28,06:20
+1042,Classic Beef Taco,2,2026-02-28,11:20
+1043,Chicken Quesadilla,4,2026-02-28,14:20
+1044,Classic Beef Taco,3,2026-02-28,16:20
+1045,Classic Beef Taco,1,2026-02-28,20:20
+1046,Churros with Caramel,1,2026-02-28,22:20
+1047,Classic Beef Taco,2,2026-03-01,00:20
+1048,Loaded Nachos,1,2026-03-01,03:20
+1049,Loaded Nachos,4,2026-03-01,06:20
+1050,Churros with Caramel,4,2026-03-01,11:20

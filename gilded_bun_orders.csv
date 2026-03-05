@@ -1,0 +1,51 @@
+order_id,item_name,item_quantity,date,time
+1001,Double Bacon Burger,1,2026-02-23,06:26
+1002,Loaded Fries,3,2026-02-23,11:26
+1003,Vanilla Milkshake,2,2026-02-23,13:26
+1004,Classic Cheeseburger,4,2026-02-23,15:26
+1005,Loaded Fries,4,2026-02-23,20:26
+1006,Vanilla Milkshake,4,2026-02-23,21:26
+1007,Loaded Fries,3,2026-02-24,02:26
+1008,Vanilla Milkshake,3,2026-02-24,05:26
+1009,Loaded Fries,4,2026-02-24,06:26
+1010,Double Bacon Burger,2,2026-02-24,11:26
+1011,Loaded Fries,3,2026-02-24,13:26
+1012,Vanilla Milkshake,3,2026-02-24,16:26
+1013,Loaded Fries,4,2026-02-24,19:26
+1014,Vanilla Milkshake,3,2026-02-24,23:26
+1015,Double Bacon Burger,3,2026-02-25,02:26
+1016,Loaded Fries,4,2026-02-25,03:26
+1017,Vanilla Milkshake,4,2026-02-25,07:26
+1018,Classic Cheeseburger,4,2026-02-25,10:26
+1019,Loaded Fries,3,2026-02-25,13:26
+1020,Classic Cheeseburger,1,2026-02-25,16:26
+1021,Classic Cheeseburger,3,2026-02-25,20:26
+1022,Loaded Fries,4,2026-02-25,21:26
+1023,Loaded Fries,2,2026-02-26,02:26
+1024,Classic Cheeseburger,2,2026-02-26,03:26
+1025,Double Bacon Burger,3,2026-02-26,08:26
+1026,Loaded Fries,2,2026-02-26,09:26
+1027,Loaded Fries,3,2026-02-26,14:26
+1028,Double Bacon Burger,1,2026-02-26,15:26
+1029,Classic Cheeseburger,3,2026-02-26,19:26
+1030,Classic Cheeseburger,3,2026-02-26,23:26
+1031,Classic Cheeseburger,2,2026-02-27,02:26
+1032,Classic Cheeseburger,1,2026-02-27,05:26
+1033,Classic Cheeseburger,1,2026-02-27,06:26
+1034,Classic Cheeseburger,2,2026-02-27,09:26
+1035,Double Bacon Burger,4,2026-02-27,14:26
+1036,Double Bacon Burger,1,2026-02-27,17:26
+1037,Double Bacon Burger,1,2026-02-27,20:26
+1038,Loaded Fries,1,2026-02-27,21:26
+1039,Double Bacon Burger,2,2026-02-28,00:26
+1040,Loaded Fries,3,2026-02-28,04:26
+1041,Classic Cheeseburger,3,2026-02-28,08:26
+1042,Loaded Fries,4,2026-02-28,09:26
+1043,Vanilla Milkshake,2,2026-02-28,12:26
+1044,Vanilla Milkshake,2,2026-02-28,15:26
+1045,Classic Cheeseburger,3,2026-02-28,19:26
+1046,Loaded Fries,1,2026-02-28,23:26
+1047,Double Bacon Burger,1,2026-03-01,01:26
+1048,Double Bacon Burger,2,2026-03-01,05:26
+1049,Classic Cheeseburger,2,2026-03-01,07:26
+1050,Double Bacon Burger,4,2026-03-01,09:26

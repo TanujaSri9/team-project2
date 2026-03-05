@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Night Bites</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_neon_bistro.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Seoul Night Bites</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Street Menu</a></li>
+            <li><a href="#analytics">Night Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Experience the Taste of Seoul Nights</h1>
+                <p>Bold street flavors from the bustling night markets of Korea.</p>
+                <a href="#menu" class="btn-primary">Explore Street Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Street Market Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/tteokbokki.jpg" alt="Tteokbokki">
+                <h3>Tteokbokki</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-tteokbokki" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Tteokbokki', 'qty-tteokbokki')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/korean_corn_dog.jpg" alt="Korean Corn Dog">
+                <h3>Korean Corn Dog</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-corndog" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Korean Corn Dog', 'qty-corndog')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/kimchi_pancake.jpg" alt="Kimchi Pancake">
+                <h3>Kimchi Pancake</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-pancake" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Kimchi Pancake', 'qty-pancake')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/bingsu.jpg" alt="Bingsu Dessert">
+                <h3>Bingsu Dessert</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-bingsu" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Bingsu Dessert', 'qty-bingsu')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Popular Night Specials Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Seoul Night Bites</h2>
+                <p>Seoul Night Bites captures the lively energy of Korean night markets. Our dishes bring authentic
+                    street flavors prepared fresh with traditional spices and ingredients.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/korean_street_vendor.jpg"
+                    alt="Korean Street Vendor">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Seoul Night Bites. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_neon_bistro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Haven Grill</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_azure_haven.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Azure Haven Grill</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Island Grill</a></li>
+            <li><a href="#analytics">Special Plates</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Taste the Spirit of Aloha</h1>
+                <p>Island grilled specialties inspired by Hawaiian tropical flavors.</p>
+                <a href="#menu" class="btn-primary">Explore Island Grill</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Hawaiian Grill Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/hawaiian_bbq_chicken.jpg"
+                    alt="Hawaiian BBQ Chicken">
+                <h3>Hawaiian BBQ Chicken</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-chicken" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Hawaiian BBQ Chicken', 'qty-chicken')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/pineapple_pork.jpg" alt="Grilled Pineapple Pork">
+                <h3>Grilled Pineapple Pork</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-pork" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Grilled Pineapple Pork', 'qty-pork')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/island_shrimp_bowl.jpg" alt="Island Shrimp Bowl">
+                <h3>Island Shrimp Bowl</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-shrimp" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Island Shrimp Bowl', 'qty-shrimp')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/coconut_pineapple_drink.jpg"
+                    alt="Coconut Pineapple Drink">
+                <h3>Coconut Pineapple Drink</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-drink" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Coconut Pineapple Drink', 'qty-drink')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Popular Special Plates Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Azure Haven Grill</h2>
+                <p>Aloha Island BBQ celebrates the relaxed and flavorful cuisine of Hawaii. Our dishes combine tropical
+                    ingredients and smoky barbecue flavors inspired by island cooking traditions.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/hawaiian_grill_chef.jpg" alt="Hawaiian Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Azure Haven Grill. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_azure_haven.js"></script>
+</body>
+
+</html>

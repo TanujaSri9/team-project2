@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fiesta Tapas Bar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_iberia_social.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">La Fiesta</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Tapas Menu</a></li>
+            <li><a href="#analytics">Chef Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Taste the Joy of Spanish Tapas</h1>
+                <p>Small plates, bold flavors, and the spirit of Spanish dining.</p>
+                <a href="#menu" class="btn-primary">Explore Tapas Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Tapas Bar Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/patatas_bravas.jpg" alt="Patatas Bravas">
+                <h3>Patatas Bravas</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-patatas" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Patatas Bravas', 'qty-patatas')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/garlic_shrimp.jpg" alt="Garlic Shrimp Tapas">
+                <h3>Garlic Shrimp Tapas</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-shrimp" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Garlic Shrimp Tapas', 'qty-shrimp')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/chicken_croquettes.jpg"
+                    alt="Spanish Chicken Croquettes">
+                <h3>Spanish Chicken Croquettes</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-croquettes" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Spanish Chicken Croquettes', 'qty-croquettes')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/spanish_churros.jpg" alt="Churros with Chocolate">
+                <h3>Churros with Chocolate</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-churros" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Churros with Chocolate', 'qty-churros')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Popular Chef Specials Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About La Fiesta Tapas Bar</h2>
+                <p>La Fiesta Tapas Bar celebrates the joyful tradition of Spanish tapas dining. Our chefs craft
+                    flavorful small plates inspired by the vibrant kitchens of Spain.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/spanish_tapas_chef.jpg" alt="Spanish Tapas Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 La Fiesta Tapas Bar. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_iberia_social.js"></script>
+</body>
+
+</html>

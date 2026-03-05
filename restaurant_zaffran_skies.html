@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istanbul Flame Kebab House</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Istanbul Flame</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Kebab Menu</a></li>
+            <li><a href="#analytics">Grill Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Authentic Turkish Kebabs<br>Fresh From The Grill</h1>
+                <p>Traditional Turkish flavors grilled over charcoal for unforgettable taste.</p>
+                <a href="#menu" class="btn-primary">Explore Grill Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Kebab House Specials</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/doner_kebab.jpg" alt="Doner Kebab Wrap">
+                <h3>Doner Kebab Wrap</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-doner" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Doner Kebab Wrap', 'qty-doner')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/adana_kebab.jpg" alt="Adana Kebab Skewers">
+                <h3>Adana Kebab Skewers</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-adana" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Adana Kebab Skewers', 'qty-adana')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/chicken_shish_kebab.jpg" alt="Chicken Shish Kebab">
+                <h3>Chicken Shish Kebab</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-chicken" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Chicken Shish Kebab', 'qty-chicken')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/turkish_baklava.jpg" alt="Turkish Baklava">
+                <h3>Turkish Baklava</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-baklava" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Turkish Baklava', 'qty-baklava')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Popular Grill Specials Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Istanbul Flame Kebab House</h2>
+                <p>Istanbul Flame Kebab House brings the authentic taste of Turkish grilling culture to your table. Our chefs prepare every kebab using traditional spices and charcoal grilling techniques.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/turkish_grill_chef.jpg" alt="Turkish Grill Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Istanbul Flame Kebab House. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

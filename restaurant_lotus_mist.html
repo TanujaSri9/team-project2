@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saigon Pho Street Kitchen</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_lotus_mist.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Saigon Pho</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Pho Menu</a></li>
+            <li><a href="#analytics">Chef Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Authentic Vietnamese Pho & Noodle Bowls</h1>
+                <p>Rich broth, fresh herbs, and traditional Vietnamese flavors in every bowl.</p>
+                <a href="#menu" class="btn-primary">Explore Pho Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Pho Street Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/beef_pho.jpg" alt="Beef Pho Noodle Soup">
+                <h3>Beef Pho Noodle Soup</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-beef-pho" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Beef Pho Noodle Soup', 'qty-beef-pho')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/chicken_pho.jpg" alt="Chicken Pho Soup">
+                <h3>Chicken Pho Soup</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-chicken-pho" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Chicken Pho Soup', 'qty-chicken-pho')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/vietnamese_spring_rolls.jpg"
+                    alt="Vietnamese Spring Rolls">
+                <h3>Vietnamese Spring Rolls</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-rolls" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Vietnamese Spring Rolls', 'qty-rolls')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/vietnamese_iced_coffee.jpg"
+                    alt="Vietnamese Iced Coffee">
+                <h3>Vietnamese Iced Coffee</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-coffee" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Vietnamese Iced Coffee', 'qty-coffee')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Saigon Street Kitchen - Live Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling every 5 seconds.</p>
+        <div class="chart-container" style="max-width: 600px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Saigon Pho Street Kitchen</h2>
+                <p>Saigon Pho Street Kitchen celebrates the authentic street food culture of Vietnam. Our chefs prepare
+                    rich pho broths and fresh noodle dishes inspired by traditional Vietnamese recipes.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/vietnamese_pho_chef.jpg" alt="Vietnamese Pho Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Saigon Pho Street Kitchen. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_lotus_mist.js"></script>
+</body>
+
+</html>

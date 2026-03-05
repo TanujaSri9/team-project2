@@ -1,0 +1,354 @@
+:root {
+    --primary: #2A9D8F;
+    /* Vietnamese jade green */
+    --secondary: #264653;
+    /* Deep teal */
+    --accent: #F4A261;
+    /* Warm noodle orange */
+    --background: #F8F9FA;
+    --text: #2B2B2B;
+    --heading-font: 'Be Vietnam Pro', sans-serif;
+    --body-font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary);
+    /* Green accent underline */
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('../images/hero_lotus_mist.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Let some image show through */
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    color: var(--secondary);
+    padding: 3rem;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    color: #444;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    padding: 1.1rem 3rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    /* Rounded edges */
+    transition: transform 0.3s, background-color 0.3s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #1a7d72;
+    transform: translateY(-5px);
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+
+.menu-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent);
+    margin: 15px auto 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    border: 1px solid #f1f1f1;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    /* Hover lift animation */
+    box-shadow: 0 15px 30px rgba(42, 157, 143, 0.15);
+}
+
+.food-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    padding: 1.5rem 1rem 0.5rem;
+    font-size: 1.6rem;
+}
+
+.order-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem 2rem;
+}
+
+.order-controls input {
+    width: 60px;
+    padding: 0.6rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.btn-buy {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #1a7d72;
+}
+
+.order-message {
+    margin-top: 2rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.5s;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-message.success {
+    background-color: #e6fffa;
+    color: #234e52;
+    border: 1px solid #b2f5ea;
+}
+
+.order-message.error {
+    background-color: #fff5f5;
+    color: #742a2a;
+    border: 1px solid #feb2b2;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Analytics Section */
+.analytics-section {
+    padding: 5rem 5%;
+    background-color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+}
+
+/* About Section */
+.about-section {
+    background-color: white;
+    padding: 7rem 5%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary);
+    color: #ddd;
+    text-align: center;
+    padding: 3rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}

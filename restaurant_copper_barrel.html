@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavarian Barrel Haus</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_copper_barrel.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Bavarian Barrel</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Grill Menu</a></li>
+            <li><a href="#analytics">Beer Hall Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Authentic Bavarian Grill & Beer Hall</h1>
+                <p>Classic German flavors served in a lively Bavarian atmosphere.</p>
+                <a href="#menu" class="btn-primary">Explore Grill Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>German Grill Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/bratwurst_plate.jpg" alt="Bratwurst Sausage Plate">
+                <h3>Bratwurst Sausage Plate</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-bratwurst" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Bratwurst Sausage Plate', 'qty-bratwurst')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/pork_schnitzel.jpg" alt="German Pork Schnitzel">
+                <h3>German Pork Schnitzel</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-schnitzel" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('German Pork Schnitzel', 'qty-schnitzel')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/bavarian_pretzel.jpg"
+                    alt="Pretzel with Cheese Dip">
+                <h3>Pretzel with Cheese Dip</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-pretzel" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Pretzel with Cheese Dip', 'qty-pretzel')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/grilled_sausage_platter.jpg"
+                    alt="Grilled Sausage Platter">
+                <h3>Grilled Sausage Platter</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-platter" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Grilled Sausage Platter', 'qty-platter')">Buy
+                        Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Beer Hall Specials Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Bavarian Barrel Haus</h2>
+                <p>Bavarian Barrel Haus celebrates the rich tradition of German beer hall cuisine. Our chefs prepare
+                    authentic Bavarian dishes using traditional grilling techniques and classic recipes.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/german_grill_chef.jpg" alt="German Grill Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bavarian Barrel Haus. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_copper_barrel.js"></script>
+</body>
+
+</html>

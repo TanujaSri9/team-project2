@@ -1,0 +1,319 @@
+:root {
+    --primary: #9B2226;
+    --secondary: #E9C46A;
+    --accent: #264653;
+    --background: #FFF8F2;
+    --text: #2B2B2B;
+    --heading-font: 'Merriweather', serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--text);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--accent);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--secondary);
+}
+
+.logo {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('../images/hero_zaffran_skies.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    color: white;
+    padding: 2rem;
+    animation: fadeIn 1.5s ease;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #f1f1f1;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #7A191D;
+    transform: translateY(-3px);
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    padding: 1.5rem 1rem 0.5rem;
+    font-size: 1.3rem;
+}
+
+.order-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.order-controls input {
+    width: 60px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btn-buy {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    font-family: var(--body-font);
+}
+
+.btn-buy:hover {
+    background-color: #7A191D;
+}
+
+.order-message {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.5s;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-message.success {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+}
+
+.order-message.error {
+    background-color: #F8D7DA;
+    color: #721C24;
+    border: 1px solid #F5C6CB;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Analytics Section */
+.analytics-section {
+    padding: 4rem 5%;
+    background-color: white;
+    text-align: center;
+}
+
+.analytics-section h2 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--background);
+    padding: 5rem 5%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background-color: var(--accent);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .nav-links {
+        display: none; 
+    }
+}

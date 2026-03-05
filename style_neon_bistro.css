@@ -1,0 +1,382 @@
+:root {
+    --primary: #FF0054;
+    /* Neon pink */
+    --secondary: #2B2D42;
+    /* Night market navy */
+    --accent: #FFD60A;
+    /* Street light yellow */
+    --background: #FFF8F8;
+    --text: #2B2B2B;
+    --heading-font: 'Noto Sans KR', sans-serif;
+    --body-font: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+    color: var(--text);
+    font-weight: 900;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--secondary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--primary);
+    /* Neon accent */
+    box-shadow: 0 4px 15px rgba(255, 0, 84, 0.4);
+    /* Neon pink shadow */
+}
+
+.logo {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 0 10px var(--primary), 0 0 5px var(--primary);
+    /* Neon glow */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+    text-shadow: 0 0 5px var(--accent);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('../images/hero_neon_bistro.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(43, 45, 66, 0.6);
+    /* Navy overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    color: white;
+    padding: 2rem;
+    animation: fadeIn 1.5s ease;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px var(--primary), 0 0 5px var(--primary);
+    /* Pink neon glare */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    color: #f1f1f1;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-weight: 700;
+    box-shadow: 0 0 15px rgba(255, 0, 84, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #CC0044;
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 0, 84, 0.8);
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 5rem 5%;
+    text-align: center;
+    background-color: var(--background);
+}
+
+.menu-section h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--secondary);
+    position: relative;
+    display: inline-block;
+}
+
+.menu-section h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: var(--primary);
+    margin: 10px auto 0;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+}
+
+.food-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(43, 45, 66, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #ffeff4;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 0, 84, 0.2);
+    border-color: var(--primary);
+}
+
+.food-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    padding: 1.5rem 1rem 0.5rem;
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+.order-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.order-controls input {
+    width: 60px;
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: var(--body-font);
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.order-controls input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.btn-buy {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 25px;
+    /* Rounded edges */
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-family: var(--body-font);
+    font-weight: 700;
+}
+
+.btn-buy:hover {
+    background-color: #CC0044;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 84, 0.6);
+}
+
+.order-message {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.5s;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-message.success {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+}
+
+.order-message.error {
+    background-color: #F8D7DA;
+    color: #721C24;
+    border: 1px solid #F5C6CB;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Analytics Section */
+.analytics-section {
+    padding: 4rem 5%;
+    background-color: #fff;
+    text-align: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.analytics-section h2 {
+    font-size: 2.8rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--secondary);
+    color: white;
+    padding: 6rem 5%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+    /* Yellow */
+    text-shadow: 0 0 10px var(--accent);
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 3px solid var(--primary);
+    /* Neon border */
+}
+
+/* Footer */
+footer {
+    background-color: #1a1b26;
+    color: #888;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istanbul Baklava Café</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_saffron_court.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Istanbul Baklava Café</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Dessert Menu</a></li>
+            <li><a href="#analytics">Coffee Bar</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Sweet Traditions from Istanbul</h1>
+                <p>Authentic Turkish desserts and aromatic coffee served with tradition.</p>
+                <a href="#menu" class="btn-primary">Explore Dessert Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Turkish Dessert Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/pistachio_baklava.jpg"
+                    alt="Classic Pistachio Baklava">
+                <h3>Classic Pistachio Baklava</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-baklava" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Classic Pistachio Baklava', 'qty-baklava')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/turkish_delight.jpg" alt="Turkish Delight">
+                <h3>Turkish Delight</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-delight" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Turkish Delight', 'qty-delight')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/kunafa_dessert.jpg" alt="Kunafa Dessert">
+                <h3>Kunafa Dessert</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-kunafa" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Kunafa Dessert', 'qty-kunafa')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/turkish_coffee.jpg" alt="Turkish Coffee">
+                <h3>Turkish Coffee</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-coffee" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Turkish Coffee', 'qty-coffee')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Live Coffee & Dessert Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling every 5 seconds.</p>
+        <div class="chart-container" style="max-width: 600px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Istanbul Baklava Café</h2>
+                <p>Istanbul Baklava Café celebrates the rich dessert culture of Turkey. Our sweets and coffee are
+                    prepared using authentic recipes passed down through generations.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/turkish_dessert_chef.jpg"
+                    alt="Turkish Dessert Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Istanbul Baklava Café. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_saffron_court.js"></script>
+</body>
+
+</html>

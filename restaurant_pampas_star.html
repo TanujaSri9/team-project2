@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Flame Grill</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_pampas_star.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Rio Flame Grill</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Grill Menu</a></li>
+            <li><a href="#analytics">Churrasco Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Brazilian Fire Grilled Perfection</h1>
+                <p>Juicy meats grilled over open flames with authentic Brazilian flavor.</p>
+                <a href="#menu" class="btn-primary">Explore Grill Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Churrasco Grill Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/picanha_steak.jpg" alt="Picanha Steak">
+                <h3>Picanha Steak</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-picanha" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Picanha Steak', 'qty-picanha')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/beef_skewers.jpg" alt="Brazilian Beef Skewers">
+                <h3>Brazilian Beef Skewers</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-skewers" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Brazilian Beef Skewers', 'qty-skewers')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/garlic_butter_chicken.jpg"
+                    alt="Garlic Butter Chicken">
+                <h3>Garlic Butter Chicken</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-chicken" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Garlic Butter Chicken', 'qty-chicken')">Buy
+                        Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/pao_de_queijo.jpg" alt="Brazilian Cheese Bread">
+                <h3>Brazilian Cheese Bread</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-pao" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Brazilian Cheese Bread', 'qty-pao')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Popular Churrasco Specials Sales</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Rio Flame Grill</h2>
+                <p>Rio Flame Grill celebrates the bold tradition of Brazilian churrasco grilling. Our chefs prepare
+                    premium cuts of meat over open flames to deliver rich smoky flavor and unforgettable dining.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/brazilian_grill_chef.jpg"
+                    alt="Brazilian Grill Chef">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Rio Flame Grill. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_pampas_star.js"></script>
+</body>
+
+</html>

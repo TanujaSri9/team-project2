@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lone Star Smokehouse</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_rustic_timber.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Lone Star Smokehouse</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">BBQ Menu</a></li>
+            <li><a href="#analytics">Pitmaster Specials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Authentic Texas Smokehouse BBQ</h1>
+                <p>Slow-smoked meats cooked for hours over real wood fire.</p>
+                <a href="#menu" class="btn-primary">Explore BBQ Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Smokehouse Favorites</h2>
+        <div class="menu-grid">
+            <!-- Food Item 1 -->
+            <div class="food-card">
+                <img src="assets/texas_brisket.jpg" alt="Texas Beef Brisket">
+                <h3>Texas Beef Brisket</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-brisket" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Texas Beef Brisket', 'qty-brisket')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 2 -->
+            <div class="food-card">
+                <img src="assets/bbq_pork_ribs.jpg" alt="BBQ Pork Ribs">
+                <h3>BBQ Pork Ribs</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-ribs" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('BBQ Pork Ribs', 'qty-ribs')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 3 -->
+            <div class="food-card">
+                <img src="assets/bbq_grilled_chicken.jpg" alt="Grilled BBQ Chicken">
+                <h3>Grilled BBQ Chicken</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-chicken" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Grilled BBQ Chicken', 'qty-chicken')">Buy Now</button>
+                </div>
+            </div>
+            <!-- Food Item 4 -->
+            <div class="food-card">
+                <img src="assets/mac_cheese.jpg" alt="Mac and Cheese Bowl">
+                <h3>Mac and Cheese Bowl</h3>
+                <div class="order-controls">
+                    <input type="number" id="qty-mac" value="1" min="1" max="10">
+                    <button class="btn-buy" onclick="placeOrder('Mac and Cheese Bowl', 'qty-mac')">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="order-message" class="order-message hidden"></div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section class="analytics-section" id="analytics">
+        <h2>Pitmaster's Performance</h2>
+        <p>Real-time updates dynamically tracked via Fetch polling.</p>
+        <div class="chart-container" style="max-width: 700px; margin: 2rem auto;">
+            <canvas id="ordersChart"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Lone Star Smokehouse</h2>
+                <p>Lone Star Smokehouse celebrates the tradition of Texas barbecue. Our meats are slow smoked for hours
+                    using traditional pit techniques that bring deep smoky flavor.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/bbq_pitmaster.jpg" alt="BBQ Pitmaster">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lone Star Smokehouse. All rights reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script_rustic_timber.js"></script>
+</body>
+
+</html>
